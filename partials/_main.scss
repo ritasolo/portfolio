@@ -1,0 +1,471 @@
+main {
+
+	.img {
+		width: 100%;
+		position: absolute;
+	}
+
+	.introduction {
+		display: flex;
+		flex-wrap: wrap;
+		min-height: 80vh;
+		padding-top: 10rem;
+		
+		.half {
+			width: 50%;
+			position: relative;	
+
+		.button p {
+			@include primaryFont(1.1rem);
+			text-transform: uppercase;
+			font-weight: 700;
+			letter-spacing: 1px;
+			border: 2px solid black;
+			border-radius: 5px;
+			margin: 25px 0;
+			padding: 15px 50px;
+			display: inline-block;
+			}
+		}
+	
+		.half1 {
+			width: 50%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			opacity: 0.9;
+			img {
+				width: 90%;
+				transition: 2s;
+			}
+
+			img:hover {
+				transform: scale(1.1);
+			}
+		}
+
+		.half2 {
+			width: 50%;
+			padding-left: 66px;
+			align-self: center;
+			padding-bottom: 2rem;
+			h2 {
+				margin-bottom: 3rem;
+				text-align: left;
+			}
+
+			p:first-of-type {
+				font-family: 'Dosis', sans-serif;
+				text-transform: uppercase;
+				font-size: 1.1rem;
+				word-spacing: 3rem;
+				text-align: center;
+			}
+
+			.garySnyder {
+				margin-top: 3rem;
+			} 
+			p:last-of-type {
+				text-transform: uppercase;
+				font-size: 1rem;
+				text-align: right;
+				margin-top: 1rem;
+			}
+		}
+	}
+	
+
+	.moreInfo {
+		display: flex;
+		padding-top: 5rem;
+
+		.half {
+			width: 50%;
+			min-height: 100vh;
+		}
+
+		p {
+			margin-top: 2rem;
+		}
+
+		p:first-of-type {
+			margin-top: 3rem;
+		}
+
+		h2 {
+			text-align: left;
+			background-color: white;
+			width: 100%;
+			display: inline;
+			padding: 0.5rem 1rem 1rem 1rem;
+		}
+
+		h4 {
+			@include secondaryFont(1.6rem);
+			padding-top: 3rem;
+			margin: 0;
+			margin-bottom: 2%;
+		}
+
+		h4:first-of-type {
+			margin-top: 1rem;
+		}
+
+		.half1 {
+			background-color: $secondaryColor;
+			padding-left: 17.5%;
+			padding-right: 3%;
+			padding-top: 7%;
+			 padding-bottom: 7%;
+		}
+
+		.half2 {
+			background-color: $primaryColor;
+			padding-right: 17.5%;
+			position: relative;
+		}
+		.half2 img {
+			position: absolute;
+			left: 7rem;
+			padding-top: 23rem;
+			width: 500px;
+			transition: 1s;
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
+	}
+
+	.galleryInfo {
+		padding: 15rem 0;
+		h2 {
+			width: 30%;
+			margin: 10px 0;
+			margin-right: 70px;
+			float: left;
+		}
+
+		p {
+			width: 100%;
+			text-align: right;
+		}
+
+		p:last-of-type {
+			margin-top: 20px;
+			margin-bottom: 40px;
+		}
+
+		a {
+			color: #c0c0c0;
+			margin-right: 20px;
+			&:hover {
+				color: black;
+			}
+		}
+	}
+
+	.gallerySection {
+		max-height: 100vh;
+		width: 100%;
+		clear: both;
+		.galleryColumn {
+			display: flex;
+			flex-wrap: wrap;
+			background-color: white;
+			flex-direction: column;
+			width: 25%;
+			float: left;
+		}
+			.galleryItem {
+			padding: 5px;
+			background-color: white;
+			width: 100%;
+			position: relative;
+			transition: 1s;
+				&:hover img {
+				transform: scale(1.02);
+				}
+				&:hover h3 {
+					display: block;
+				}
+			img {
+				transition: 1s;
+			}
+		}
+
+		h3 {
+			z-index: 10;
+			font-size: 2rem;
+			position: absolute;	
+			margin: 0 auto;
+			left: 1rem;
+			top: 1rem;
+			color: black;
+			display: none;
+			opacity: 0.2;
+		}
+	}
+
+	.listInfoSection {
+		#answer1, #answer2, #answer3, #answer4 {display: none;}
+		background-color: $greyTone;
+		padding: 13rem 0;
+		position: relative;
+		display: flex;
+		h2 {
+			width: 30%;
+			margin: 0;
+			margin-right: 70px;
+			text-align: left;
+			background-color: white;
+			display: inline;
+			width: 100%;
+			padding: 0rem 1rem 1rem 1rem;
+		}
+
+		p {
+			padding-top: 1rem;
+			float: right;
+		}
+
+		img {
+			width: 400px;
+			position: absolute;
+			left: -14rem;
+			top: 28rem;
+			transition: 1s;
+		}
+
+		.listCover {
+			width: 100%;
+			background: url(images/post1cover.jpg);
+			height: 25rem;
+			background-size: cover;
+			background-position: center;
+			margin-top: 4rem;
+			transition: 5s;
+			&:hover {
+				opacity: 0.5;
+			}
+		}
+
+		hr {
+		   border: 0;
+		   margin: 1rem 0;
+		   height: 0;
+		   border-top: 1px solid rgba(0, 0, 0, 0.1);
+		   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+		}
+
+		.listItems {
+			clear: both;
+			display: flex;
+			flex-wrap: wrap;
+			margin-top: 0.5rem;
+
+			.entries {
+				width: 5%;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				justify-content: left;
+				background-color: white;
+				padding: 5rem 0;
+				h4 {
+					font-family: 'Dosis', sans-serif;
+					font-size: 1.3rem;
+					font-weight: bold;
+					color: $greyTone;
+				}
+				h4 a {
+					color: $brightColor;
+					transition: 0.2s;
+					&:hover {
+						color: $greyTone;
+					}
+					&:active {
+						color: $brightColor;
+					}
+				}
+			}
+
+			.entries:last-of-type {
+				width: 15%;
+			}
+			
+			.listItem {
+				clear: both;
+				width: 70%;
+				background-color: white;
+				padding: 5rem;
+				transition: all 1s;
+
+				p {
+					width: 100%;
+					margin: 0;
+					font-size: 1.3rem;
+					padding-bottom: 1rem;
+				}
+
+				.title {
+					padding-bottom: 1rem;
+					color: black;
+					font-size: 1.4rem;
+					font-family: 'Dosis', serif;
+				}
+
+				.number {
+					color: $brightColor;
+			     }
+			}
+
+			.listItem1 {
+				padding-left: 20%;
+			}
+
+			.listItem2, .listItem3, .listItem4 {
+				display: none;
+				padding-left: 20%;
+			}
+
+
+			.listItem3 {
+				
+			}
+		
+			.post {
+				transition: 1s;
+
+				p:nth-child(3) {
+					padding-bottom: 1rem;
+				}
+			}
+	
+		}
+
+		.number {
+			font-size: 2rem;
+			font-style: italic;
+			color: #c0c0c0;
+			padding-bottom: 0.7rem;
+		}
+	}
+
+	.featureSection {
+		min-height: 50vh;
+		padding-bottom: 6.5rem;
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		h2 {
+			width: 100%;
+			padding-top: 11rem;
+			padding-bottom: 2rem;
+			text-align: center;
+		}
+		a {
+			color: #c0c0c0;
+			margin-right: 20px;
+			&:hover {
+				color: black;
+			}
+		}
+		img {
+			width: 20rem;
+			position: absolute;
+			margin: 0;
+			top: -9rem;
+			align-self: center;
+			transition: 1s;
+		}
+	}
+
+		form input,
+		form textarea {
+			width:100%;
+			font-family: 'Cardo', serif;
+			height:30px;
+			padding:2rem 2rem;
+			font-size: 1.3rem;
+			color:#999;
+			letter-spacing:1px;
+			background: #FFF;
+			border: 0;
+			border-bottom:1px solid $greyTone;
+			margin-bottom:25px;
+		}
+
+		form input:focus,
+		form textarea:focus {
+			color:#999;
+			outline: none;
+		}
+
+		form textarea {
+			height:15rem;
+			resize: none;
+		}
+
+		form .submit {
+			width:100%;
+			font-size: 3rem;
+			height:8rem;
+			border: 0;
+			background-color: $greyTone;
+			font-family: 'Dosis', sans-serif;
+			opacity: 1;
+			color: white;
+			margin-top: 1rem;
+			transition: 1s;
+		}
+
+		form .submit:hover {
+			cursor:pointer;
+			opacity: 0.5;
+		}
+	}
+
+
+	.quoteSection {
+		min-height: 26vh;
+		background-color: $greyTone;
+		padding-top: 6.5rem;
+		
+		.quotes {
+			justify-content: center;
+			display: flex;
+			p {
+				padding-top: 2%;
+			}
+
+			.socialLinks {
+				display: flex;
+				width: 60%;
+				justify-content: center;
+				padding-bottom: 6.5rem;
+			}
+
+			h1 {
+				color: black;
+				font-size: 8rem;
+				padding: 0 4rem;
+				opacity: 0.5;
+			}
+
+			a {
+				transition: 1s;
+				color: darkgrey;
+			}
+
+			a:hover {
+				color: $primaryColor;
+			}
+		}
+	}
+
+	.logoSection {
+		background-color: $primaryColor;
+		height: 8rem;
+	}
+

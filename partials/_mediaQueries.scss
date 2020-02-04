@@ -1,0 +1,256 @@
+html {
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+	
+}	
+/* Landscape phone to portrait tablet */
+@media (max-width: 800px) {
+	header {
+		overflow: hidden;
+		.headerBox {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: -24rem;
+		left: 30%;
+		transition: 1s;
+		z-index: 1;
+	}
+}
+
+main {
+
+	.wrapper {
+		width: 80%;
+	}
+
+	.introduction {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		.half {
+			flex: 1;
+			width: 90%;
+		}
+
+		.half1 img {
+			width: 100%;
+		}
+
+		.half2 {
+			padding: 0 3rem;
+			h2 {
+				text-align: center;
+				padding-top: 1rem;
+			}
+		}
+	}
+
+	.listInfoSection {
+		.listItems {
+			width: 100%;
+		}
+	}
+
+	.galleryInfo {
+		h2 {
+			width: 15%;
+			margin-left: 10%;
+		}
+	}
+
+	.gallerySection {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.listInfoSection {
+		width: 100%;
+		margin: 0 auto;
+		.listInfo {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+}
+	nav {
+	background-color: $greyTone;
+	.container {
+		width: 100%;
+	}
+
+	.hamburger,
+	.exit-responsive {
+		display: block;
+		font-size: 3rem;
+		margin-right: 10%;
+		margin-top: 4rem;
+		color: black;
+		&:hover {
+			color: red;
+		}
+	}
+
+	.menu {
+		display: none;
+		position: absolute;
+		top: -7.8rem;
+		left: 0;
+		right: -1rem;
+		bottom: 0;
+		text-align: right;
+		color: $greyTone;
+	}
+
+	.menu ul {
+		display: flex;
+		flex-direction: column;
+		margin-top: 15rem;
+		margin-right: 10%;
+	}
+
+	.menu ul a {
+		font-size: 3rem;
+		background-color: white;
+		line-height: 5.5rem;
+		width: 100%;
+		transition: 0.2s;
+		&:hover {
+			color: $brightColor;
+		}
+	}
+
+	.upArrow {
+		opacity: 0;
+	}
+
+	.menu li:first-of-type {
+		margin-top: 0.5rem;
+		margin-right: 1.4rem;
+	}
+}
+
+}
+
+@media (max-width: 667px) {	
+	header {
+		overflow: hidden;
+	}
+	.wrapper {
+		width: 80%;
+	}
+
+	.moreInfo {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		h2 {
+			text-align: center;
+		}
+		.half {
+		width: 100%;
+		padding: 5rem;
+		}
+		.half2 img {
+		position: relative;
+		left: 4rem;
+		}
+	}
+
+	.featureSection {
+		justify-content: center;
+	}
+
+	.featureSection h2 {
+		text-align: center;
+	}
+
+	.wrapper {
+		width: 100%;
+	}
+
+	.gallerySection {
+		width: 100%;
+	}
+
+	.quoteSection {
+		.socialLinks {
+			justify-content: center;
+		}
+		.socialLinks h1 {
+			font-size: 5rem;
+			padding: 0 2rem;
+		}
+	}
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	header {
+		overflow: hidden;
+	}
+
+	header {
+		h1 {
+			left: -5rem;
+		}
+
+		.headerBox {
+			left: -4rem;
+		}
+	}
+
+	.moreInfo {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		h2 {
+			text-align: center;
+		}
+		.half {
+		width: 100%;
+		padding: 5rem;
+		}
+		.half2 img {
+		position: relative;
+		top:-10rem;
+		left: -8rem;
+		}
+	}
+
+	.galleryInfo {
+		height: 70rem;
+		h2 {
+			padding: 2rem 0;
+		}
+	}
+
+	.gallerySection {
+		width: 70%;
+		margin: 0 1.5rem;
+		margin-left: 2rem;
+	}
+	
+	.listInfoSection {
+		flex-direction: column;
+		p {
+			position: relative;
+			top: -4rem;
+			left: 2rem;
+		}
+		.listInfo {
+			width: 100%;
+		}
+
+		.entries {
+			width: 1%;
+		}
+	}
+
+	.featureSection h2 {
+		text-align: center;
+	}
+}
+
+}

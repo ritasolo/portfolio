@@ -1,0 +1,116 @@
+nav { 
+	background-color: $greyTone;
+	width: 100vw;
+	position: fixed;
+	display: flex;
+	z-index: 10;
+
+	img {
+		width: 1.8rem;
+		height: 1.5rem;
+		position: relative;
+		top: 0.05rem;
+	}
+
+	h3  {
+		@include secondaryFont(2.3rem);
+		padding: 2rem 0;
+		position: relative;
+		float: left;
+		margin-left: 6%;
+	}
+
+	h3 a {
+		position: relative;
+		top: 0.1rem;
+	}
+
+
+	.container {
+		margin: 0 auto;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	h1, h3 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+
+	img {
+		margin-right: 0.5rem;
+	}
+
+	h1 {
+		font-size: 4rem;
+	}
+
+	.contrast {
+		color: $brightColor;
+	}
+
+	ul {
+		list-style: none;
+		display: flex;
+		justify-content: space-around;
+		align-content: center;
+		padding: 0;
+		padding-top: 0.5rem;
+		margin-top: 5rem;
+		margin-right: 30%;
+	}
+
+	a {
+		color: #c2c2c2;
+		text-decoration: none;
+		padding: 1rem;
+		transition: 3s;
+		&:hover {
+			color: $greyTone;
+	}
+
+	.show a {
+		color: red;
+	}
+
+}
+	.hamburger,
+	.exit-responsive {
+		display: none;
+		transition: 0.5s;
+	}
+
+	.show.menu {
+		display: block;
+		position: absolute;
+	}
+
+
+	li {
+		@include secondaryFont(1.4rem);
+		margin-right: 1rem;
+	}
+
+	a:first-of-type {
+		color: black;
+	}
+
+	a {
+		color: #c2c2c2;
+		text-decoration: none;
+		padding: 0.3rem;
+		transition: 3s;
+		&:hover {
+			color: $greyTone;
+	}
+}
+
+	li:last-of-type {
+		padding-top: 0.15rem;
+	}
+
+}
+
+
+

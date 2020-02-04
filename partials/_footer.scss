@@ -1,0 +1,56 @@
+footer {
+	background-color: #292929;
+	min-height: 58vh;
+	padding-top: 10rem;
+	position: relative;
+	p {
+		color: #e3e3e3;
+		font-family: 'Dosis', sans-serif;
+	}
+
+	.footerSection {
+		width: 100%;
+		text-align: center;
+		padding: 0 1rem;
+		p:last-of-type {
+			text-transform: uppercase;
+			opacity: 0.9;
+			margin-top: 1rem;
+		}
+		a {
+			color: $primaryColor;
+			transition: 0.5s;
+			&:hover {
+				opacity: 0.8;
+			}
+		}
+		img {
+			width: 20rem;
+			margin-bottom: 1.5rem;
+			transition: 2s;
+			&:hover {
+				opacity: 0;
+			}
+		}
+	}
+
+	.footerSection1 p:nth-of-type(2n) {
+	line-height: 3rem;
+	padding-right: 30px;
+	}
+
+	.footerSection2 {
+		width: 40%; 
+		padding-right: 60px;
+		p:nth-of-type(2n) {
+		line-height: 2.4rem;
+		}
+	}
+
+	.footerSection3 {
+		width: 20%;
+		p:nth-of-type(2n) {
+		line-height: 2.4rem;
+		}
+	}
+}
